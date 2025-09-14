@@ -9,7 +9,7 @@ export default function ProductCard({ product, onAddToCart }) {
       </div>
       <div className={styles.details}>
         <div className={styles.name}>{product.name}</div>
-        <div className={styles.price}>${product.price}</div>
+        <div className={styles.price}>Rs. {product.price}</div>
         <div className={styles.mg}>{product.mg} MG</div>
       </div>
     </div>

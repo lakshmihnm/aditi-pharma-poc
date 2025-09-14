@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../public/file.svg';
+import logo from '../public/logo-light.jpg';
 import styles from './Header.module.css';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -30,7 +30,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.left}>
         <Image src={logo} alt="Logo" width={32} height={32} />
-        <span className={styles.name}>Arati Labs</span>
+        <span className={styles.name}>Aditi Pharma</span>
       </div>
       <nav className={styles.right}>
         <Link href="/">Home</Link>
