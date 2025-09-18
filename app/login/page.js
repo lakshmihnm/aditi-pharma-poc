@@ -10,7 +10,9 @@ export default function LoginPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username === "admin" && password === "admin") {
+    if (username === "admin@gmail.com" && password === "admin") {
+      localStorage.setItem('isLoggedIn', 'true');
+      window.dispatchEvent(new Event('storage'));
       router.push("/");
     } else {
       setError("Invalid credentials");

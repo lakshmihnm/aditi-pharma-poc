@@ -30,16 +30,23 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.left}>
         <Image src={logo} alt="Logo" width={32} height={32} />
-        <span className={styles.name}>Aditi Pharma</span>
+        <Link href="/dashboard" className={styles.name} style={{ textDecoration: 'none', color: '#222', fontWeight: 700, fontSize: '1.3rem', marginLeft: 8 }}>
+          Aditi Pharma
+        </Link>
       </div>
       <nav className={styles.right}>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
-        {isLoggedIn ? (
-          <button onClick={handleLogout} style={{ background: 'none', border: 'none', color: '#444', fontWeight: 500, cursor: 'pointer' }}>Logout</button>
+        {!isLoggedIn ? (
+          <>
+            {/* <Link href="/dashboard">Dashboard</Link> */}
+            <Link href="/login">Login</Link>
+          </>
         ) : (
-          <Link href="/login">Login</Link>
+          <>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
+            <button onClick={handleLogout} style={{ background: 'none', border: 'none', color: '#444', fontWeight: 500, cursor: 'pointer' }}>Logout</button>
+          </>
         )}
       </nav>
     </header>

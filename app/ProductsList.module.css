@@ -1,3 +1,60 @@
+.productsTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+.productsTable th {
+  background: #f5f8fa;
+  font-weight: 600;
+  color: #1976d2;
+  padding: 14px 10px;
+  font-size: 1.08rem;
+}
+.productsTable td {
+  padding: 12px 10px;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+.productsTable tr {
+  transition: background 0.2s;
+}
+.productsTable tr:hover {
+  background: #f0f7ff;
+}
+.productsTable img {
+  max-width: 48px;
+  max-height: 48px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.productsContainer {
+  padding: 2rem;
+  overflow-x: auto;
+}
+.productsTable th, .productsTable td {
+  border-bottom: 1px solid #eee;
+}
+.addToCartTableBtn {
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.addToCartTableBtn:hover {
+  background: #005bb5;
+}
 .productsContainer {
   background: #f5f5f5;
   border-radius: 8px;

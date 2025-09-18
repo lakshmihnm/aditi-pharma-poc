@@ -69,11 +69,49 @@ export default function ProductsList({ products }) {
           )}
         </button>
       </div>
-      <div className={styles.productsGrid}>
-        {products.map(product => (
-          <ProductCard key={product.id} product={product} onAddToCart={() => handleAddToCart(product)} />
-        ))}
+      <div style={{ overflowX: 'auto', marginTop: 32 }}>
+        <table className={styles.productsTable} style={{ width: '100%', borderCollapse: 'collapse', background: '#fff', borderRadius: 8 }}>
+          <thead>
+            <tr style={{ background: '#f5f5f5' }}>
+              {/* <th style={{ padding: '12px 8px', textAlign: 'left' }}>Image</th> */}
+              <th style={{ padding: '12px 8px', textAlign: 'left' }}>Name</th>
+              <th style={{ padding: '12px 8px', textAlign: 'left' }}>Price</th>
+              <th style={{ padding: '12px 8px', textAlign: 'left' }}>MG</th>
+              <th style={{ padding: '12px 8px', textAlign: 'center' }}>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {products.map(product => (
+              <tr key={product.id} style={{ borderBottom: '1px solid #eee' }}>
+                {/* <td style={{ padding: '10px 8px' }}>
+                  <img src={product.image} alt={product.name} style={{ width: 48, height: 48, objectFit: 'contain', borderRadius: 8, background: '#fafafa' }} />
+                </td> */}
+                <td style={{ padding: '10px 8px', fontWeight: 500 }}>{product.name}</td>
+                <td style={{ padding: '10px 8px', color: '#009688', fontWeight: 600 }}>₹ {product.price}</td>
+                <td style={{ padding: '10px 8px' }}>{product.mg} mg</td>
+                <td style={{ padding: '10px 8px', textAlign: 'center' }}>
+                  <button
+                    className={styles.addToCartTableBtn}
+                    aria-label="Add to Cart"
+                    onClick={() => handleAddToCart(product)}
+                    style={{ background: '#0070f3', border: 'none', borderRadius: '50%', width: 32, height: 32, color: '#fff', fontSize: 20, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                  >
+                    +
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
+      <CartModal
+        open={modalOpen}
+        onClose={handleCloseModal}
+        cartItems={Object.values(cartItems)}
+        onAdd={id => handleAddToCart(products.find(p => p.id === id))}
+        onRemove={handleRemoveFromCart}
+        onSubmit={handleSubmitCart}
+      />
       <CartModal
         open={modalOpen}
         onClose={handleCloseModal}
