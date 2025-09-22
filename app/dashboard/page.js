@@ -2,7 +2,7 @@
 
 export default function Dashboard() {
   return (
-    <div style={{ maxWidth: 1100, margin: "40px auto", padding: 0, background: "#f5f5f5", borderRadius: 16, boxShadow: "0 4px 24px rgba(0,0,0,0.08)" }}>
+    <div style={{ margin: "2rem", padding: 0, background: "#f5f5f5", borderRadius: 16, boxShadow: "0 4px 24px rgba(0,0,0,0.08)" }}>
       {/* Banner Section */}
       <div style={{ width: "100%", height: 220, background: "linear-gradient(90deg,#1976d2 60%,#fff 100%)", borderTopLeftRadius: 16, borderTopRightRadius: 16, display: "flex", alignItems: "center", justifyContent: "space-between", padding: "0 48px" }}>
         <div>

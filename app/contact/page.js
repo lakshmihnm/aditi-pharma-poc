@@ -7,7 +7,7 @@ export default function Contact() {
       <div style={{ background: "#fff", padding: 24, borderRadius: 12, boxShadow: "0 2px 8px #eee", marginBottom: 24 }}>
         <h2 style={{ color: "#009688", marginBottom: 10 }}>Aditi Pharma</h2>
         <div style={{ marginBottom: 8, fontWeight: 500 }}>
-          <span style={{ color: '#444' }}>Address:</span> C V Raman Nagar, Bengaluru, Karnataka - 560093
+          <span style={{ color: '#444' }}>Address:</span> R T Nagar, Bengaluru, Karnataka - 560032
         </div>
         <div style={{ marginBottom: 8, fontWeight: 500 }}>
           <span style={{ color: '#444' }}>Phone:</span> +91 98765 43210
