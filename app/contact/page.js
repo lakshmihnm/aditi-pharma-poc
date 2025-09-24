@@ -7,17 +7,17 @@ export default function Contact() {
       <div style={{ background: "#fff", padding: 24, borderRadius: 12, boxShadow: "0 2px 8px #eee", marginBottom: 24 }}>
         <h2 style={{ color: "#009688", marginBottom: 10 }}>Aditi Pharma</h2>
         <div style={{ marginBottom: 8, fontWeight: 500 }}>
-          <span style={{ color: '#444' }}>Address:</span> R T Nagar, Bengaluru, Karnataka - 560032
+          <span style={{ color: '#444' }}>Address:</span> K NO.22/A, 1ST FLOOR, 1ST MAIN GANGANAGAR LAYOUT WARD NO.98, HEBBAL BENGALURU - 560032
         </div>
         <div style={{ marginBottom: 8, fontWeight: 500 }}>
-          <span style={{ color: '#444' }}>Phone:</span> +91 98765 43210
+          <span style={{ color: '#444' }}>Phone:</span> +91 7899036916
         </div>
         <div style={{ marginBottom: 8, fontWeight: 500 }}>
-          <span style={{ color: '#444' }}>Email:</span> contact@aditipharma.com
+          <span style={{ color: '#444' }}>Email:</span> aditipharma2015@gmail.com
         </div>
-        <div style={{ marginBottom: 8, fontWeight: 500 }}>
+        {/* <div style={{ marginBottom: 8, fontWeight: 500 }}>
           <span style={{ color: '#444' }}>Customer Support:</span> 1800-123-4567 (Toll Free)
-        </div>
+        </div> */}
         <div style={{ marginBottom: 8, fontWeight: 500 }}>
           <span style={{ color: '#444' }}>Working Hours:</span> Mon-Sat, 9:00 AM - 7:00 PM
         </div>

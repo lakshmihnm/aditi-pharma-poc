@@ -6,7 +6,7 @@ export default function Dashboard() {
       {/* Banner Section */}
       <div style={{ width: "100%", height: 220, background: "linear-gradient(90deg,#1976d2 60%,#fff 100%)", borderTopLeftRadius: 16, borderTopRightRadius: 16, display: "flex", alignItems: "center", justifyContent: "space-between", padding: "0 48px" }}>
         <div>
-          <h1 style={{ color: "#fff", fontSize: "2.5rem", fontWeight: 700, marginBottom: 12 }}>Welcome to Aditi Pharma Healthstore</h1>
+          <h1 style={{ color: "#fff", fontSize: "2.5rem", fontWeight: 700, marginBottom: 12 }}>Welcome to Aditi Pharma</h1>
           <p style={{ color: "#e3f2fd", fontSize: "1.2rem" }}>Your trusted partner for medicines, wellness, and healthcare essentials.</p>
         </div>
         <img src="https://cdn.netmeds.tech/v2/plain-cake-860195/original/storefront/images/footer_logo.svg" alt="Banner" style={{ height: 120 }} />
