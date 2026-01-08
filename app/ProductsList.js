@@ -77,7 +77,7 @@ export default function ProductsList({ products }) {
               <th style={{ padding: '12px 8px', textAlign: 'left' }}>Name</th>
               <th style={{ padding: '12px 8px', textAlign: 'left' }}>Price</th>
               <th style={{ padding: '12px 8px', textAlign: 'left' }}>MG</th>
-              <th style={{ padding: '12px 8px', textAlign: 'center' }}>Action</th>
+              <th style={{ padding: '12px 8px', textAlign: 'left' }}>Action</th>
             </tr>
           </thead>
           <tbody>
