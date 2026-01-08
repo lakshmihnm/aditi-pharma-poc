@@ -30,7 +30,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.left}>
         <Image src={logo} alt="Logo" width={32} height={32} />
-        <Link href="/dashboard" className={styles.name} style={{ textDecoration: 'none', color: '#222', fontWeight: 700, fontSize: '1.3rem', marginLeft: 8 }}>
+        <Link href="/dashboard" className={styles.name}>
           Aditi Pharma
         </Link>
       </div>
@@ -45,7 +45,7 @@ export default function Header() {
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
-            <button onClick={handleLogout} style={{ background: 'none', border: 'none', color: '#444', fontWeight: 500, cursor: 'pointer' }}>Logout</button>
+            <button onClick={handleLogout} className={styles.logoutBtn}>Logout</button>
           </>
         )}
       </nav>

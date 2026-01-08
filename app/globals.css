@@ -28,3 +28,21 @@ body {
 .container {
   background-color: #ffffff;
 }
+
+.centeredPage {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .centeredPage {
+    min-height: 70vh;
+    padding: 0 6px;
+  }
+}

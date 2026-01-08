@@ -19,8 +19,10 @@ export default function Home() {
   if (!isLoggedIn) return null;
 
   return (
-    <div>
-      <ProductsList products={products} />
+    <div className="centeredPage">
+      <div>
+        <ProductsList products={products} />
+      </div>
     </div>
   );
 }
